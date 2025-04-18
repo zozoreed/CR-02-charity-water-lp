@@ -7,7 +7,7 @@ Create a simple HTML layout for a nonprofit landing page with sections for a her
 Write CSS using a color palette of [insert your brand colors] and fonts that feel [insert tone, e.g., bold and modern].
 
 ## Build the Hero Section
-Create a hero section with a centered headline, subheadline, and full-width image that grabs attention.
+Create a hero section with a centered headline, subheadline, and full-width background image that grabs attention.
 
 ## Add Story + CTA Sections
 Add a section for a real-world impact story with text and an image, and a donation section with a bold 'Donate Now' button.
