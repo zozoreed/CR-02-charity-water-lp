@@ -71,7 +71,18 @@
     /* Right section */
     .right {
       flex: 1;
-      background: url("4750_Ethiopia_2019_CG-.jpg") center/cover no-repeat;
+      /* Remove background image */
+      display: flex;
+      align-items: stretch; /* Make image fill from top to bottom */
+      justify-content: center;
+      padding: 0;
+    }
+
+    .right img {
+      width: 100%; /* Image fills the right side horizontally */
+      height: 100vh; /* Image fills the right side vertically */
+      object-fit: cover; /* Keeps image aspect ratio and covers area */
+      display: block;
     }
 
     /* Responsive design */
@@ -79,8 +90,8 @@
       .container {
         flex-direction: column;
       }
-      .right {
-        height: 300px;
+      .right img {
+        height: 300px; /* Smaller image on mobile */
       }
     }
   </style>
@@ -91,7 +102,7 @@
     <div class="left">
       <div class="logo">
         <!-- Logo image -->
-        <img src="charitywater_logo_horizontal_BlackText.png" alt="charity: water logo">
+        <img src="cw_logo-2.png" alt="charity: water logo">
       </div>
       <h1>Fuel the Ripple.<br>Start the Wave.</h1>
       <p>
@@ -101,8 +112,11 @@
       <a href="#" class="cta-button">Fuel the Ripple</a>
     </div>
 
-    <!-- Right side image -->
-    <div class="right"></div>
+    <!-- Right side image from top to bottom -->
+    <div class="right">
+      <!-- Show the photo on the right side, filling the space -->
+      <img src="4750_Ethiopia_2019_CG-.jpg" alt="Water project in Ethiopia">
+    </div>
   </div>
 </body>
 </html>
