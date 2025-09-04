@@ -1,47 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water - Fuel the Ripple</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tinos', serif; /* default body font */
+      background-color: #fdf6e3; /* cream background */
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    /* Left section */
+    .left {
+      flex: 1;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .logo img {
+      height: 50px; /* adjust logo size */
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-family: 'Montserrat', sans-serif; /* Headline font */
+      font-size: 40px;
+      color: #4a90a0; /* blue */
+      margin: 0 0 20px;
+    }
+
+    p {
+      font-family: 'Tinos', serif; /* Body font */
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffcc00;
+      color: #333;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #e6b800;
+    }
+
+    /* Right section */
+    .right {
+      flex: 1;
+      background: url("4750_Ethiopia_2019_CG-.jpg") center/cover no-repeat;
+    }
+
+    /* Responsive design */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+      }
+      .right {
+        height: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <div class="container">
+    <!-- Left side content -->
+    <div class="left">
+      <div class="logo">
+        <!-- Logo image -->
+        <img src="charitywater_logo_horizontal_BlackText.png" alt="charity: water logo">
+      </div>
+      <h1>Fuel the Ripple.<br>Start the Wave.</h1>
+      <p>
+        Dive into a global wave of changemakers, delivering safe, clean water to
+        communities in need—and witness the life-changing impact of your actions firsthand.
+      </p>
+      <a href="#" class="cta-button">Fuel the Ripple</a>
+    </div>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <!-- Right side image -->
+    <div class="right"></div>
+  </div>
 </body>
 </html>
